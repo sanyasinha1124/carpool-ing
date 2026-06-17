@@ -1,0 +1,45 @@
+carpool/
+├── backend/
+│   ├── src/
+│   │   ├── config/
+│   │   │   ├── database.ts        ← TypeORM DataSource
+│   │   │   └── app.ts             ← Express app setup
+│   │   ├── entities/              ← TypeORM Entities
+│   │   │   ├── User.ts
+│   │   │   ├── Ride.ts
+│   │   │   ├── Booking.ts
+│   │   │   ├── Rating.ts
+│   │   │   └── Message.ts
+│   │   ├── routes/
+│   │   │   ├── auth.routes.ts
+│   │   │   ├── rides.routes.ts
+│   │   │   └── bookings.routes.ts
+│   │   ├── controllers/
+│   │   ├── services/              ← Business logic
+│   │   ├── middleware/
+│   │   │   ├── auth.middleware.ts
+│   │   │   └── validate.middleware.ts
+│   │   ├── migrations/
+│   │   └── server.ts
+│   ├── package.json
+│   └── tsconfig.json
+│
+└── frontend/
+    ├── src/
+    │   ├── app/
+    │   │   ├── core/
+    │   │   │   ├── services/      ← API, Auth, Socket
+    │   │   │   ├── guards/
+    │   │   │   └── interceptors/
+    │   │   ├── shared/
+    │   │   │   ├── components/    ← Reusable UI
+    │   │   │   └── models/        ← TypeScript interfaces
+    │   │   ├── features/
+    │   │   │   ├── auth/
+    │   │   │   ├── rides/
+    │   │   │   ├── bookings/
+    │   │   │   └── profile/
+    │   │   ├── app.routes.ts
+    │   │   └── app.component.ts
+    │   └── environments/
+    └── package.json
